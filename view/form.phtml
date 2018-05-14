@@ -1,0 +1,14 @@
+<?php
+    use Zend\ServiceManager\ServiceLocatorInterface;
+
+    $this->headScript()->appendFile($this->assetUrl('js/form.js', 'ItemExtend'));
+
+/*    $connection = $serviceLocator->get('Omeka\Connection');
+    $sql = "SELECT text FROM item_extend WHERE id = 1;";
+
+    $connection->exec($sql);
+    $connection->result*/
+?>
+<fieldset id="extra-section" class="section">
+        <textarea type="text" id="text"></textarea>
+</fieldset>
